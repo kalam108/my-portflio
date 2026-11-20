@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Kalam, BCA student and web developer">
+  <title>Kalam | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header and Navigation ===== -->
+  <header id="header">
+    <div class="container nav-bar">
+      <a href="#home" class="logo">Kalam<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button class="theme-btn" id="themeBtn" aria-label="Dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Home / Hero ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+          <h1>Kalam</h1>
+          <h2>I am a <span id="typing" class="typing"></span><span class="cursor">|</span></h2>
+          <p>
+            A BCA student from Itahari, Nepal, who loves building websites
+            and is learning to make mobile apps.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace the letter with your photo: <img src="images/profile.jpg" alt="Kalam"> -->
+          <div class="photo-circle">K</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am <b>Kalam</b>, a <b>Bachelor of Computer Application (BCA)</b> student.
+              I enjoy turning ideas into real websites that people can use. I started with
+              HTML and CSS, then learned JavaScript, and now I build full projects like an
+              e-commerce website for a local hardware shop.
+            </p>
+            <p>
+              Right now I am learning <b>Flutter and Dart</b> to build mobile apps. My goal is to
+              become a <b>full-stack web and app developer</b>.
+            </p>
+          </div>
+          <table class="info-table">
+            <tr><th>Name</th><td>Kalam</td></tr>
+            <tr><th>Course</th><td>BCA</td></tr>
+            <tr><th>Location</th><td>Itahari, Nepal</td></tr>
+            <tr><th>Interest</th><td>Web &amp; App Development</td></tr>
+            <tr><th>Languages</th><td>Nepali, Hindi, English</td></tr>
+          </table>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3 class="counter" data-target="20">0</h3>
+            <p>Practicals Done</p>
+          </div>
+          <div class="stat">
+            <h3 class="counter" data-target="3">0</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat">
+            <h3 class="counter" data-target="6">0</h3>
+            <p>Technologies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-info"><span>HTML5</span><span>85%</span></div>
+            <div class="bar"><div class="fill" data-width="85"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>CSS3</span><span>75%</span></div>
+            <div class="bar"><div class="fill" data-width="75"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+            <div class="bar"><div class="fill" data-width="65"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>React</span><span>45%</span></div>
+            <div class="bar"><div class="fill" data-width="45"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>Supabase</span><span>40%</span></div>
+            <div class="bar"><div class="fill" data-width="40"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>Flutter / Dart</span><span>30%</span></div>
+            <div class="bar"><div class="fill" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <h3 class="sub-title">Tools I Use</h3>
+        <div class="tools">
+          <span>VS Code</span>
+          <span>Git &amp; GitHub</span>
+          <span>Chrome DevTools</span>
+          <span>Antigravity</span>
+          <span>Figma</span>
+          <span>Android Studio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="college">College</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project" data-category="web">
+            <div class="project-img img1">🛒</div>
+            <div class="project-body">
+              <h3>NanoTech E-commerce</h3>
+              <p>
+                An online store for NanoTech, a hardware shop in Itahari. Customers browse
+                products, add them to a cart, and send the list on WhatsApp to ask the price.
+                It has an admin panel for products and stock.
+              </p>
+              <div class="tech">
+                <span>React</span><span>Supabase</span><span>WhatsApp</span>
+              </div>
+              <a href="#" class="link">Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project" data-category="web college">
+            <div class="project-img img2">🏔️</div>
+            <div class="project-body">
+              <h3>Visit Nepal</h3>
+              <p>
+                A tourism website (BCA mini project) with destinations, category filter,
+                search, a photo gallery popup, and a travel enquiry form with validation.
+              </p>
+              <div class="tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="#" class="link">Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project" data-category="college">
+            <div class="project-img img3">🧪</div>
+            <div class="project-body">
+              <h3>Web Tech Practicals</h3>
+              <p>
+                20 lab practicals: forms, tables, CSS box model, navigation menu, JavaScript
+                loops, functions, arrays, DOM and form validation.
+              </p>
+              <div class="tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="#" class="link">View Code →</a>
+            </div>
+          </div>
+
+          <div class="project" data-category="app">
+            <div class="project-img img4">📱</div>
+            <div class="project-body">
+              <h3>Flutter Practice Apps</h3>
+              <p>
+                Small mobile apps I am building while learning Flutter and Dart,
+                like a counter, a to-do list and a calculator.
+              </p>
+              <div class="tech">
+                <span>Flutter</span><span>Dart</span>
+              </div>
+              <a href="#" class="link">Coming Soon</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">Present</span>
+            <h3>Bachelor of Computer Application (BCA)</h3>
+            <p>Sushma Godawari College, Nepal</p>
+            <p>National Integrated College</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">Year</span>
+            <h3>+2 /Shree Sarada Secondary School</h3>
+            <p>Divine Temple Eng. School</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">Year</span>
+            <h3>SEE</h3>
+            <p>Divine Temple Eng. School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Have a project or an idea? Send me a message and I will reply soon.</p>
+            <p>📍 Itahari, Sunsari, Nepal</p>
+            <p>✉️ kalamchy88@gmail.com</p>
+            <p>💼 github.com/kalam108</p>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <input type="text" id="name" placeholder="Your Name">
+            <span class="error" id="nameErr"></span>
+
+            <input type="email" id="email" placeholder="Your Email">
+            <span class="error" id="emailErr"></span>
+
+            <input type="text" id="subject" placeholder="Subject">
+            <span class="error" id="subjectErr"></span>
+
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+            <span class="error" id="messageErr"></span>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p class="success" id="successMsg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Kalam. Made with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <button id="topBtn" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
